@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.loginmain{
+    background: url('./images/login_page/photo-1487088678257-3a541e6e3922.jpg');
+    background-size: cover;
+    animation: login 1s ease-in;
+
+}
+.emailloginbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5vh;
+}
+.fieldsetlogin{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 75vh;
+}
+.loginmaincontainer{
+    margin: 2vh 16vw;
+    background-color: #ffffff78;
+}
+.aboutalign{
+    display: flex;
+}
+.loginheading{
+    margin: 8vh 0 6vh;
+    background-color: black;
+    color: white;
+    padding: 0.5vw;
+}
+.emailaddress{
+    height: 5vh;
+    width: 19vw;
+    color: white;
+    background-color: black;
+}
+.setsubmit{
+    margin: 4vh 0;
+}
+.extralogin{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3vh 0;
+}
+.rememberme{
+    margin-right: 2vw;
+}
+@keyframes login {
+    0%{
+        background-position: 110%;
+        opacity: 0.1;
+    }
+    100%{
+        background-position: -110%;
+        opacity: none; 
+    }
+    
+}
+@media screen and (max-width:900px) {
+    .emailaddress{
+        height: 4vh;
+        width: 26vw;
+    }
+    .setsubmit {
+        margin: 1vh 0;
+    }
+    .loginheading {
+        margin: 7vh 0 4vh;
+        font: size 1.5vw;
+    }    
+    .loginmaincontainer {
+        margin: 2vh 13vw;
+    }  
+    .fieldsetlogin{
+        height: 50vh;
+    }   
+}
+@media screen and (max-width:675px) {
+    .emailaddress {
+        height: 4vh;
+        width: 53vw;
+    }
+    
+}
+@media screen and (max-width:330px) {
+    .extralogin{
+        flex-direction: column;
+    }
+    .rememberme {
+        margin-right: 2vw;
+        margin-bottom: 1vh;
+    }
+    .setsubmit {
+        margin: 0.5vh 0;
+    }
+    
+}

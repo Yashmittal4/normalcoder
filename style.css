@@ -18,6 +18,12 @@
     height: 10vh;
     margin-left: 1vw;
 }
+.logonav:hover{
+    transform: scale(1.05);
+    border: 3.5px groove black;
+    transition: transform 0.15s ease-in;
+    /* transition: border 2s ease-in; */
+}
 .ulist{
     display: flex;
     justify-content: center;
@@ -32,7 +38,8 @@ li a:hover{
     cursor:pointer;
     color: darkred;
 }
-li a{
+
+.linknav{
     text-decoration: none;
     font-size: 1.8vw;
     color: antiquewhite;
@@ -56,6 +63,9 @@ li a{
     width: 8vw;
     height: 7vh;
 }
+.editbtnnav:hover{
+    transform: scale(1.02);
+}
 .mainbg{
     display: flex;
     flex-direction:column;
@@ -69,20 +79,36 @@ li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: cadetblue url('./images/mainhead/photo-1539635278303-d4002c07eae3.jpg') no-repeat ;
+    background: cadetblue url('./images/mainhead/photo-1506012787146-f92b2d7d6d96.jpg') no-repeat ;
     background-size: cover;
     margin-top: 5px;
 }
 .explore{
     /* background-color: black; */
-    background: url('./images/mainhead/headings/photo-1557682224-5b8590cd9ec5.jpg');
-    color: aliceblue;
+    color: black;
     border: 2px ridge whitesmoke;
     text-align: center;
     border: 4px solid black;
     font-size: 2vw;
     margin: 0 6vw 2vh;
     font-family: 'Playfair Display', serif;
+    border-radius: 11px;
+    animation: animate 1s linear ;
+}
+@keyframes animate {
+    0%{
+        background-position: 100%;
+        transform: none;
+        transition: none;
+        opacity: 0.1;
+    }
+    100%{
+        background-position: -100%;
+        transform: scaleX(1.05);
+        transition: transform 0.35s ease-in;
+        opacity: none;
+    }
+    
 }
 .explore2{
     color: black;
@@ -90,11 +116,13 @@ li a{
     text-decoration: underline;
     text-align: center;
     height: 6vh;
-    border: 4px solid black;
-    background: url('./images/mainhead/headings/photo-1557682224-5b8590cd9ec5.jpg');
+    border: 4px groove black;
+    background: url('./images/mainhead/photo-1506012787146-f92b2d7d6d96.jpg');
     font-size: 1.7em; 
     margin-bottom: 3vh;
-    font-family: 'Slabo 27px', serif;
+    border-radius: 7px;
+    animation: animate 1s linear ;
+    font-family: 'Playfair Display', serif;
 }
 .searchbox{
     background-color: aliceblue;
@@ -178,6 +206,8 @@ li a{
 }
 .box:hover{
     background:url('./images/options/options_bg/photo-1537204319452-fdbd29e2ccc7.jpg');
+    transform: scale(1.05);
+    transition: transform 0.20s ease-in;
 }
 .headingoption{
     text-align: center;
@@ -195,8 +225,7 @@ li a{
     justify-content: center;
     align-items: center;
     margin: 3vh 9vw;
-    border: 2px sold black;
-    border: 2px solid black;
+    border: 6px groove black;
     border-radius: 3vw;
     overflow: hidden;
 }
@@ -237,7 +266,7 @@ li a{
 .imgreview:hover{
     cursor:pointer;
     width:33vw;
-
+    transform: scale(1.1);
 }
 @media screen and (max-width:1350px) {
     .logonav{
@@ -404,6 +433,6 @@ li a{
         font-size: 0.9em;
         height: 2vh;
     }
-
-    
 }
+
+

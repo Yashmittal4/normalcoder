@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trips</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./plan.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="shortcut icon" href="./images/favicon/icons8-travel-portal-16.png" type="image/x-icon">
+</head>
+<body class="planbg">
+    <header>
+        <nav class="aboutalign" >
+            <div class="boxlogonav">
+                <img src="./images/download.png" class="logonav" alt="">
+            </div>
+            <ul class="ulist">
+                <li><a href="index.html" class="linknav  " style="color: black;">Home</a></li>
+                <li><a href="about.html" class="linknav" style="color: black;">About</a></li>
+                <li><a href="contact.html" class="linknav set" style="color: black;">contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <div class="planmaincontainer">
+        <div class="rightcontact boxbg" id="plandelete">
+            <div class="infocontactbox">
+                <div class="emailinfobox">
+                    <div class="emailinfo">
+                        <h3>Email</h3>
+                    </div>
+                    <div class="inputemail"style="position: relative;">
+                        <div id="emptyplan"style="position: absolute; bottom: -20px;">
+                        </div>
+                        <form>
+                            <input type="email" name="email" class="mailto"placeholder="Enter a valid email address"onkeyup="ValidateEmailPlan()">
+                        </form>
+                    </div>
+                </div>
+                <div class="emailinfobox">
+                    <div class="nameinfo">
+                        <h3>Name</h3>
+                    </div>
+                    <div class="inputname">
+                        <form>
+                            <input type="text"id="nameplan" class="mailto"onkeyup="ValidateNamePlan()"placeholder="Enter your name">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="addresscontactbox">
+                <div class="addressinfo">
+                    <h3>Place Where You Want To Go</h3>
+                </div>
+                <div class="inputaddress">
+                    <form>
+                        <input type="text" class="addressto planplace" onkeyup="ValidatePlacePlan()"placeholder="Enter your Place">
+                    </form>
+                </div>
+            </div>
+            <div class="infocontactbox">
+                <div class="emailinfobox">
+                    <div class="emailinfo">
+                        <h3>From</h3>
+                    </div>
+                    <div class="inputemail">
+                        <form>
+                            <input type="date" name="date" class="mailto">
+                        </form>
+                    </div>
+                </div>
+                <div class="emailinfobox">
+                    <div class="nameinfo">
+                        <h3>To</h3>
+                    </div>
+                    <div class="inputname">
+                        <form>
+                            <input type="date" class="mailto" name="date">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="addresscontactbox">
+                <div class="addressinfo">
+                    <h3>Your Budjet</h3>
+                </div>
+                <div class="inputaddress">
+                    <form>
+                        <input type="range" class="addressto"id="ranges" min="5000" max="100000" value="20">
+                    </form>
+                </div>
+                <div class="value">100000</div>
+            </div>
+            <div class="addresscontactbox">
+                <div class="addressinfo">
+                    <h3>Address</h3>
+                </div>
+                <div class="inputaddress">
+                    <form>
+                        <input type="text" class="addressto"placeholder="Enter your address">
+                    </form>
+                </div>
+            </div>
+            <div class="messagebox">
+                <div class="messageinfo">
+                    <h3>Any Query</h3>
+                </div>
+                <div class="inputmessage">
+                    <textarea name="Query"  cols="50" rows="6" class="msgarea"placeholder="Enter your Query"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <button class="btnsubmit">Submit</button>
+            </div>
+        </div>
+    </div>     
+    <script src="./script.js"></script>
+    <script src="./plan.js"></script> 
+</body>
+</html>

@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.aboutalign{
+    display: flex;
+}
+.mainpastcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vh 0 0 0;
+}
+.pastbg{
+    background: url('./images/past_toursimg/pexels-photo-255379.webp') no-repeat;
+    animation: pasttour 1s ease-in;
+    background-size: cover;
+}
+.boxpast{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    overflow: hidden;
+    border: 2px solid black;
+    padding: 1vw;
+    margin: 3vh 17vh 7vh;
+    border-radius: 2vw;
+    cursor: pointer;
+}
+.boxpast:hover{
+    background:url('./images/contact/bg/photo-1527769929977-c341ee9f2033.jpg');
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in;
+}
+.rightpastbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainpastheading{
+    text-align: center;
+}
+.tellingpastheading{
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    padding: 1vw;
+}
+.mainpastheading{
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+    border: 3px groove black;
+    background-color: #ffffffb2;;
+}
+.headingpastbox{
+    background-color: #ffffffb2;
+}
+.endingpast{
+    padding: 1vw;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:#000000de;
+    color:white;
+    margin-bottom: 4vh;
+}
+@keyframes pasttour {
+    0%{
+        background-position: 5%;
+        opacity: 0.1;
+    }
+    100%{
+        background-position: -5%;
+        opacity: none; 
+    }
+    
+}
+@media screen and (max-width:950px) {
+    .boxpast{
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width:833px) {
+    .boxpast{
+        margin: 3vh 8vh 7vh;
+    }
+    .aboutalign{
+        flex-direction: column;
+    }
+    .mainpastheading{
+        font-size: 2.2vw;
+    }
+    
+}
+@media screen and (max-width:576px) {
+    .boxpast{
+        margin: 3vh 3vh 7vh;
+    }
+    .linknav {
+        font-size: 5vw;
+    }    
+}
+@media screen and (max-width:444px) {
+    .tellingpastheading{
+        font-size: 12px;
+    }
+    
+}

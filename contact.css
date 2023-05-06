@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.bg{
+    background: url('./images/contact/photo-1463171379579-3fdfb86d6285.jpg') ;
+    animation: slide 1s ease-in-out;
+}
+.aboutalign{
+    display: flex;
+}
+.maincontact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh 0;
+    width: 100vw;
+    background:url('./images/contact/bg/photo-1555505019-8c3f1c4aba5f.jpg');
+ 
+}
+
+.leftcontact{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin-left:10vw;
+    padding: 2vw;
+}
+.callbox{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    background-color: black;
+    color: wheat;
+    padding: 1vw;
+}
+.contactcall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5vh;
+}
+.instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5vh;
+}
+.linkdin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialbox{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: black;
+    color: wheat;
+    padding: 1vw;
+    
+}
+.contactheading{
+    margin-bottom: 2.7vh;
+}
+.rightcontact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-right: 5vw;
+    padding: 2vw;
+}
+.infocontactbox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5vh;
+}
+.emailinfobox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.mailto{
+    height: 5vh;
+    width:17vw;
+    color: white;
+    background-color: black;
+}
+.emailinfobox{
+    margin: 0 3vw;
+}
+.addressto{
+    width: 17vw;
+    height: 6vh;
+    color: white;
+    background-color: black;
+}
+.addresscontactbox{
+    margin-bottom: 2.5vh;
+}
+.messagebox{
+    margin-bottom: 3vh;
+}
+.btnsubmit{
+    width: 10vw;
+    height: 5vh;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+.btnsubmit:hover{
+    background-color: white;
+    color:black;
+    transform: scale(1.1);
+    border: 2px solid black;
+}
+.msgarea{
+    color: white;
+    background-color: black;
+    width: 20vw;
+}
+@keyframes slide {
+    0%{
+        background-position: 110%;
+        opacity: 0.1;
+    }
+    100%{
+        background-position: -110%;
+        opacity: none; 
+    }
+    
+}
+@media screen and (max-width:695px) {
+    .mailto{
+        height: 3.5vh;
+    }
+    .contactus{
+        font-size: 4vw;
+        text-decoration: underline;
+    }
+    .aboutalign{
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width:635px) {
+    .callbox{
+        padding: 0.2vw;
+    }
+    .addressto{
+        height: 4.5vh;
+        width: 29vw;
+    }
+    .mailto{
+        width: 23vw;
+        height:3vh;   
+    }
+}
+@media screen and (max-width:468px) {
+    .maincontact{
+        flex-direction: column;
+    }
+    .leftcontact{
+        align-items: center;
+    }  
+    .mailto{
+        width:34vw
+    } 
+    .addressto{
+        width: 40vw;
+        height: 7vh;
+    }
+    .msgarea{
+        width: 50vw;
+        height: 11vh;
+    }
+    .btnsubmit{
+        width: 20vw
+    }
+    h3{
+        background-color: black;
+        color: white;
+    }
+    .contactus{
+        font-size: 7vw;
+    }
+}

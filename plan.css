@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.planmaincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -20vw;
+}
+.value{
+    color: black;
+    text-align: center;
+}
+.planbg{
+    background: url('./images/plan/bg/photo-1508108712903-49b7ef9b1df8.jpg') no-repeat;
+    background-size: cover;
+    animation: plan 1s ease-in;
+}
+.boxbg{
+    background-color: #ffffff4d;;
+    
+}
+@keyframes plan {
+    0%{
+        background-position: 110%;
+        opacity: 0.1;
+    }
+    100%{
+        background-position: -110%;
+        opacity: none; 
+    }
+    
+}

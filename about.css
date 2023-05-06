@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: url('./images/about/bg/photo-1444703686981-a3abbc4d4fe3.jpg') ;
+    animation: yash 0.85s ease;
+}
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4vh 12vw 3vh;
+    border: 23px groove #c14646; 
+    border-radius: 3vw;
+    overflow: hidden;
+}
+.leftabout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+.aboutheading{
+    margin: 0 2vw 4vh;
+    word-break: keep-all;
+}
+.storyabout{
+    margin: 0 2vw 4vh;
+    word-break: keep-all;
+}
+.rightabout{
+    width: 24vw;
+}
+.aboutalign{
+    display: flex;
+}
+@keyframes yash {
+    0%{
+        background-position: 110%;
+        opacity: 0.1;
+    }
+    100%{
+        background-position: -110%;
+        opacity: none; 
+    }
+    
+}
+@media screen and (max-width:1110px) {
+    .aboutheading{
+        margin: 37px 2vw 4vh;
+    }
+    .maincontainer{
+        height: 60vh;
+        margin: 4vh 7vw 3vh;
+    }
+}
+@media screen and (max-width:915px) {
+    .aboutheading{
+        font-size: 1.7vw;
+        margin: 13vh 2vw 4vh;
+    }
+    .rightabout{
+        margin-right: 6vw;
+    }
+    .maincontainer{
+        height: 72vh;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .maincontainer{
+        flex-direction: column-reverse;
+    }
+    .imgabout{
+        height: 10vh;
+        opacity: 0.3;
+    }
+    
+}
+@media screen and (max-width:590px) {
+    .imgabout{
+        opacity: 0.23;
+    }
+    .rightabout {
+        margin-right: 31vw;
+    }
+    .maincontainer{
+        margin: 4vh 4vw 3vh;
+    }
+    .aboutalign{
+        flex-direction: column;
+    }
+   
+}
+@media screen and (max-width:520px) {
+    .aboutheading{
+        margin: 6vh 2vw 2vh;
+    }
+    .maincontainer{
+        border: 2vw groove #c14646;
+        
+    }
+    
+}
+@media screen and (max-width:396px) {
+    .aboutheading {
+        margin: 2vh 2vw 2vh;
+    }
+    .maincontainer{
+        height: 85vh;
+    }
+}
+    

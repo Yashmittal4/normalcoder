@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.offerbg{
+    background: url('./images/offers/photo-1562575214-da9fcf59b907.jpg') no-repeat;
+    background-size: cover;
+    animation: offer 1s ease-in;
+}
+.mainheadingoffercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:3.5vh 0 3vh;
+    padding: 1vw;
+    background-color: #808080e3;
+    text-align: center;
+}
+.mainoffercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 3vw;
+}
+.headingoffer{
+    text-align: center;
+}
+.boxoffer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black;
+    border-style: groove;
+    margin: 0 2vw;
+    border-radius: 1vw;
+    background-color: #f5deb342;
+    padding: 0.5vw;
+}
+.boxoffer1:hover{
+    transform: scale(1.03);
+    transition: transform 0.25s ease-in;
+    background-color: #0ff3;
+    cursor: pointer;
+}
+.paraoffer{
+    text-align: center;
+    word-break: keep-all;
+    margin: 2vh 0;
+}
+.imgoffer{
+    margin: 0.5vh 0;
+}
+.endingline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #808080db;
+    margin: 2.5vh 0 3vh;
+    font-size: 1.5vw;
+    padding: 1vw;
+    word-break: keep-all;
+}
+.btnoffer{
+    margin: 1vh 0;
+}
+.btnsubmitoffer{
+    background-color: #073b3e;
+    border: 2px solid black;
+    color: antiquewhite;
+    border-radius: 0.2vw;
+    padding: 1vh 1.5vw;
+    cursor: pointer;
+}
+.btnsubmitoffer:hover{
+    transform: scale(1.05);
+    transition: transform 0.20s ease-in;
+}
+@keyframes offer {
+    0%{
+        background-position: 100%;
+        opacity: 0.1;
+    }
+    100%{
+        background-position: -1%;
+        opacity: none; 
+    }
+    
+}
+@media screen and (max-width:784px) {
+    .mainoffercontainer{
+        flex-direction: column;
+        align-items: space-between;
+    }
+    .boxoffer1{
+        margin: 1vh 9vw;
+    }
+    .paraoffer{
+        margin: 1vh 0;
+    }
+    .btnoffer {
+        margin: 0.5vh 0;
+    }
+    .endingline{
+        font-size: 2.3vw;
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .endingline{
+        font-size: 2.9vw;
+        margin: 1.5vh 0 3vh;
+    }
+    
+}
