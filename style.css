@@ -15,12 +15,12 @@
     align-items: center;
 }
 .logonav{
-    height: 10vh;
+    /* height: 10vh; */
     margin-left: 1vw;
 }
 .logonav:hover{
     transform: scale(1.05);
-    border: 3.5px groove black;
+    /* border: 3.5px groove black; */
     transition: transform 0.15s ease-in;
     /* transition: border 2s ease-in; */
 }
@@ -124,8 +124,157 @@ li a:hover{
     animation: animate 1s linear ;
     font-family: 'Playfair Display', serif;
 }
+.animatetext{
+    animation: movetext 10s linear reverse infinite forwards;
+    font-size: 2vw;
+    padding: 1vh 0;
+
+}
+.removeline{
+    text-decoration: none;
+    font-weight: bold;
+  color: #D04848;
+}
+.removeline:hover{
+    text-decoration: underline;
+}
+@keyframes movetext {
+    0%{
+        transform: translateX(0);
+        transform-origin: start;
+    }
+    50%{
+        transform: translateX(92vw);
+    }
+    60%{
+        transform: translateX(80vw);
+
+    }
+    /* 70%{
+        transform: translateX(40vw);
+
+    } */
+    100%{
+        transform: translateX(0);
+
+    }
+    
+}
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .circle {
+    position: relative;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    COLOR: white;
+    border: 15px SOLID;
+    border-color: #A94438;
+    margin: 2vh 7.5vw;
+    /* transition: border-type 2s ease-in; */
+  }
+  .circle:hover{
+    transform: scale(1.1);
+    /* border: 15px outset #3C0965; */
+    animation: comunity 0.1s ease forwards;
+    /* animation: round 0.23s ease forwards; */
+    text-shadow: 0 0 3px #A94438, 0 0 5px #D24545;
+    text-decoration: underline;
+  }
+  @keyframes comunity {
+    from{
+        
+    border: 15px dashed #A94438;
+
+    }
+    
+    to{
+        
+        border: 15px outset #A94438;
+
+    }
+  }
+  @keyframes round {
+    0%{
+        border: 15px dashed #3C0965;
+    }
+    25%{
+        border-top: 15px outset #3C0965;
+    }
+    50%{
+        border-top: 15px outset #3C0965;
+        border-right: 15px outset #3C0965;
+        
+    }
+    75%{
+        border-top: 15px outset #3C0965;
+        border-right: 15px outset #3C0965;
+        border-bottom: 15px outset #3C0965;
+    }
+    100%{
+        border-top: 15px outset #3C0965;
+        border-right: 15px outset #3C0965;
+        border-bottom: 15px outset #3C0965;
+        border-left: 15px outset #3C0965;
+    }
+    
+    
+
+    
+  }
+  .seecomunity{
+    position: relative;
+    top: 5.5vh;
+    font-size: 2vw;
+    font-weight: bold;
+  }
+
+  .percentage {
+    font-size: 2vw;
+    font-weight: bold;
+    position: absolute;
+
+    z-index: 2;
+  }
+  .fill {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+      #D24545 0% 60%,    /* Adjust the percentages accordingly */
+      #E6BAA3 60% 100%
+    );
+  }
+
+  .percentage{
+    color: black;
+  }
+  .seecomunity{
+    color: black;
+  }
+
+
+.comunityheadingcontainer{
+    COLOR: #A94438;
+  padding: 3vh;
+  font-size: 1.8vw;
+  text-align: center;
+}
+
+
 .searchbox{
-    background-color: aliceblue;
+    background-color: #f0f8ff5e;
     border: 2px solid black;
     border-radius: 3vw;
     width: 60vw;
@@ -142,17 +291,19 @@ li a:hover{
     margin-right: 1vw;
 }
 .gobtn{
-    background: url('./images/mainhead/headings/photo-1557682224-5b8590cd9ec5.jpg');
+    /* background: url('./images/mainhead/headings/photo-1557682224-5b8590cd9ec5.jpg'); */
+    background-color: #d78a8a;
     border: 2px solid red;
     border-radius: 17px;
     width: 8vw;
     margin: 2vh 0;
-    color: antiquewhite;
+    color: black;
     font-size: 1vw;
     cursor: pointer;
 }
 .gobtn:hover{
-    background:url('./images/mainhead/photo-1522010675502-c7b3888985f6.jpg');
+    /* background:url('./images/mainhead/photo-1522010675502-c7b3888985f6.jpg'); */
+    background: linear-gradient(to bottom,#A94438,#D04848,#D24545);
     color: black;
 }
 .inputsearchmain{

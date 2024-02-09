@@ -42,8 +42,7 @@
     100%{
         background-position: -110%;
         opacity: none; 
-    }
-    
+    }   
 }
 @media screen and (max-width:1110px) {
     .aboutheading{

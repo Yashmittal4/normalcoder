@@ -89,7 +89,7 @@
     height: 5vh;
     width:17vw;
     color: white;
-    background-color: black;
+    background-color: #000000de;
 }
 .emailinfobox{
     margin: 0 3vw;
@@ -98,7 +98,7 @@
     width: 17vw;
     height: 6vh;
     color: white;
-    background-color: black;
+    background-color:#000000de;
 }
 .addresscontactbox{
     margin-bottom: 2.5vh;
@@ -121,7 +121,7 @@
 }
 .msgarea{
     color: white;
-    background-color: black;
+    background-color: #000000de;
     width: 20vw;
 }
 @keyframes slide {

@@ -9,7 +9,7 @@ submit.addEventListener("click",function(e){
     else {
       window.location.href="./index.html"
     }
-    // window.location.href="./index.html"
+    // window.location.hrgjddef="./index.hefj etml"
 })
 let email_space=document.querySelector("input#inemail.emailaddress");
 
